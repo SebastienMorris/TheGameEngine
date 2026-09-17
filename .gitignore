@@ -1,5 +1,9 @@
-# Prerequisites
+# ====================================================================
+# 🏛️ C++ NATIVE CORE & CMAKE ISOLATION
+# ====================================================================
+# Prerequisites & Dependencies
 *.d
+vcpkg_installed/
 
 # Compiled Object files
 *.slo
@@ -11,59 +15,75 @@
 *.gch
 *.pch
 
-# Linker files
+# Linker & Debugger Files
 *.ilk
-
-# Debugger Files
 *.pdb
+*.dwo
 
-# Compiled Dynamic libraries
+# Compiled Dynamic & Static Libraries
 *.so
 *.dylib
 *.dll
 *.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
 
-# Executables
+# Executables & Local Sandboxes
 *.exe
 *.out
 *.app
+Testing/
 
-# Build directories
-build/
-Build/
+# Build & CMake Generated Directories
+[Bb]uild/
 build-*/
-
-# CMake generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 install_manifest.txt
 compile_commands.json
+.cache/
 
-# Temporary files
+# ====================================================================
+# DIRECTX 12
+# ====================================================================
+# Compiled Shader Objects (DirectX HLSL Offline Compilation Output)
+*.cso
+
+# Pix for Windows / RenderDoc Graphics Capture Analysis Caches
+*.wpix
+*.rdatacap
+
+# ====================================================================
+# C# WPF / MSBUILD
+# ====================================================================
+# .NET Target folders and compiler intermediates
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# User-specific project settings & layout preferences
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# ====================================================================
+# JETBRAINS
+# ====================================================================
+.idea/
+.wholesome/
+
+# ====================================================================
+# OS
+# ====================================================================
+.DS_Store
+Thumbs.db
 *.tmp
 *.log
 *.bak
 *.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
